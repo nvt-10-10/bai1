@@ -1,0 +1,270 @@
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(33, 37, 41);
+  padding: 8px 12px;
+}
+
+.title {
+  color: aliceblue;
+  font-size: 2rem;
+  padding: 5px 0;
+  margin-right: 16px;
+}
+
+.navbar {
+  line-height: 40px;
+}
+.navbar__list {
+  display: flex;
+  margin: 0 -8px 0 4px;
+}
+.navbar__link {
+  display: inline-block;
+  color: #5a5a5a;
+  font-size: 1.6rem;
+  padding: 0 8px;
+  transition: 0.25s;
+}
+.navbar__link:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+.navbar__active {
+  color: aliceblue;
+}
+
+.form {
+  margin-left: auto;
+  display: flex;
+  gap: 8px;
+  height: 37px;
+}
+.form__search {
+  width: 206.4px;
+  height: 37.6px;
+  padding: 0.375rem 0.75rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  padding: 6px 12px;
+}
+.form__search:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+.form__submit {
+  font-size: 1.6rem;
+  background-color: transparent;
+  color: #198754;
+  border: 1px solid #198754;
+  border-radius: 6px;
+  padding: 6px 12px;
+  transition: 0.4s;
+}
+.form__submit:hover {
+  cursor: pointer;
+  color: aliceblue;
+  background-color: #198754;
+  border-color: #198754;
+}
+
+.slide {
+  position: relative;
+  width: 100%;
+}
+.slide__list {
+  height: 505px;
+}
+.slide__active.slide__item {
+  display: block;
+}
+.slide__item {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(119, 119, 119);
+  color: aliceblue;
+}
+.slide__item__info {
+  padding: 20px0;
+  width: 1063.45px;
+  position: absolute;
+  right: 15%;
+  left: 15%;
+  bottom: 95px;
+}
+.slide__item__title {
+  font-size: 4rem;
+  margin-bottom: 8px;
+  font-weight: 500;
+  line-height: 48px;
+  color: rgb(255, 255, 255);
+}
+.slide__item__desc {
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+.slide__item__act {
+  padding: 8px 16px;
+  font-size: 2rem;
+  background-color: #0d6efd;
+  border-radius: 8px;
+  line-height: 30px;
+  transition: 0.35s;
+}
+.slide__item__act:hover {
+  opacity: 0.8;
+}
+.slide-icon {
+  position: absolute;
+}
+.slide-icon-img {
+  width: 32px;
+  height: 32px;
+  fill: #bbbbbb;
+}
+.slide-icon-img:hover {
+  fill: #d8d5d5;
+  cursor: pointer;
+}
+.slide-icon__right {
+  right: 7.5%;
+  top: 50%;
+  translate: 0 -50%;
+}
+.slide-icon__left {
+  rotate: 180deg;
+  left: 7.5%;
+  top: 50%;
+  translate: 0 -50%;
+}
+
+.dot__list {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  gap: 8px;
+  left: 50%;
+  bottom: 30px;
+  translate: -50%;
+}
+
+.dot {
+  width: 30px;
+  height: 3px;
+  background-color: #5a5a5a;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.dot__active {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.container {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+.section-2 {
+  margin-top: 65px;
+}
+.section-2__list {
+  display: flex;
+  gap: 24px;
+  padding-bottom: 95px;
+  border-bottom: 1px solid #ccc;
+}
+.section-2__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.section-2__item--img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background-color: #ccc;
+  object-fit: cover;
+}
+.section-2__item--title {
+  margin-bottom: 8px;
+  font-size: 3.2rem;
+  font-size: 400;
+  line-height: 38.4px;
+}
+.section-2__item--desc {
+  font-size: 1.6rem;
+  margin-bottom: 24px;
+}
+.section-2__item--btn {
+  padding: 6px 12px;
+  font-size: 1.6rem;
+  line-height: 24px;
+  color: #fff;
+  background-color: #51585e;
+  border-radius: 6px;
+  transition: 0.25s;
+}
+.section-2__item--btn:hover {
+  opacity: 0.8;
+}
+
+.section {
+  margin-top: 80px;
+}
+.section__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding-bottom: 80px;
+  border-bottom: 1px solid #ccc;
+}
+.section__media {
+  height: 500px;
+  width: 500px;
+}
+.section__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.section__content {
+  margin-top: 120px;
+  max-width: 746px;
+}
+.section__heading {
+  font-size: 5rem;
+}
+.section__desc {
+  margin-top: 8px;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.footer {
+  margin: 85px 0;
+}
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__link {
+  text-decoration: underline;
+  color: blue;
+}
+.footer__link:hover {
+  opacity: 0.8;
+}
+
+/*# sourceMappingURL=main.css.map */
